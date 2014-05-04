@@ -1,8 +1,8 @@
 var myApp = angular.module('myApp', []);
 
-myApp.factory('Avengers', function() {
-    var Avengers = {};
-    Avengers.cast = [
+myApp.factory('Roster', function() {
+    var Roster = {};
+    Roster.list = [
       {
         name: "Robert Downey Jr.",
         character: "Tony Stark / Iron Man"
@@ -64,9 +64,9 @@ myApp.factory('Avengers', function() {
         character: "NASA Scientist"
       }
     ];
-    return Avengers;
+    return Roster;
 })
 
-function AvengersCtrl($scope, Avengers) {
-    $scope.avengers = Avengers;
+function RosterCtrl($scope, Roster) {
+    $scope.roster = Roster;
 }

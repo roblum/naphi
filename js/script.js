@@ -1,5 +1,6 @@
 var map
 ,chapters;
+
 	function initialize() {
   		var mapOptions = {
     	zoom: 15,

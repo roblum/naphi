@@ -10,20 +10,41 @@ var map;
 
   	var contentString = '<div>Epsilon Chapter - NYU Poly</div>';
 
-	var epsilonInfo = new google.maps.InfoWindow({
-    	content: contentString
-  	});
+  	var chapters = {
+  		alpha : {
 
-	var epsilonIcon = 'images/epsilon.png';
-	var epsilonGeo = new google.maps.LatLng(40.694074, -73.986932);
+        },beta : {
+
+        },gamma : {
+
+        },delta : {
+
+        },epsilon : {
+        	icon : 'images/epsilon.png'
+        	,geo : new google.maps.LatLng(40.694074, -73.986932)
+        	,info : new google.maps.InfoWindow({content: contentString})
+        },zeta : {
+
+        },eta : {
+
+        },theta : {
+
+        },iota : {
+
+        }
+  	}
+
+	//var epsilonInfo = ;
+
+
 	var epsilonMarker = new google.maps.Marker({
-	    position: epsilonGeo,
+	    position: chapters.epsilon.geo,
 	    map: map,
-	    icon: epsilonIcon
+	    icon: chapters.epsilon.icon
 	});
 
 	  	google.maps.event.addListener(epsilonMarker, 'click', function() {
-	    	epsilonInfo.open(map, epsilonMarker);
+	    	chapters.epsilon.info.open(map, epsilonMarker);
 	  	});
 
 }

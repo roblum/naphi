@@ -50,13 +50,8 @@ var map;
 }
 
 $('#click-me').click(function(){
-	var weatherLayer = new google.maps.weather.WeatherLayer({
-	    temperatureUnits: google.maps.weather.TemperatureUnit.FAHRENHEIT
-	});
-	  	weatherLayer.setMap(map);
-
-	var cloudLayer = new google.maps.weather.CloudLayer();
-	cloudLayer.setMap(map);
+	map.setCenter(new google.maps.LatLng(42.088828,-75.966972));
+  map.setZoom(15);
 });
 
 

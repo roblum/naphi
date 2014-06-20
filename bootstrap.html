@@ -125,9 +125,9 @@
       <div ng-app="myApp">
         <div ng-controller="RosterCtrl">
           <input type="text" ng-model="search.$">
-            <div ng-repeat="person in roster.list | filter:search" class="roster-repeat-container">
+            <div ng-repeat="person in roster.list.alpha | filter:search" class="roster-repeat-container">
               <p>{{person.name}}</p>
-              <p>{{person.character}}</p>
+              <p>{{person.pName}}</p>
             </div>
         </div>
       </div>
@@ -197,6 +197,15 @@
 
       <!-- /END THE FEATURETTES -->
 
+          <!-- INSTAGRAM FEED BEGIN -->
+        
+          <div id="insta-wrapper">
+            <div id="insta-feed">
+            </div>
+          </div>
+
+          <!-- INSTAGRAM FEED END -->
+
       <!-- GOOGLE MAPS BEGIN -->
 
         <div id="map-alpha" class="map-trigger">Alpha - University at Albany</div>
@@ -221,6 +230,7 @@
 
     </div><!-- /.container -->
 
+  
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -233,6 +243,7 @@
     <!-- GOOGLE MAPS SCRIPTS -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/instagram.js"></script>
     <script src="js/docs.js"></script><!-- Placeholder images -->
   </body>
 </html>

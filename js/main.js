@@ -2,177 +2,142 @@ var myApp = angular.module('myApp', []);
 
 myApp.factory('Roster', function() {
     var Roster = {};
-    Roster.list = [{
-        alpha : {
-            one : {
+    Roster.list = [
+            {
                 pName : 'Rage'
                 ,name : 'Bailey Peng'
                 ,number : '1'
+                ,pClass : 'alpha'
+                ,image : 'images/epsilon.png'
             }
-            ,two : {
+            ,{
                 pName : 'Method'
                 ,name : 'Peter Yu'
                 ,number : '27'
+                ,pClass : 'alpha'
             }
-            ,three : {
+            ,{
                 pName : 'Shock'
                 ,name : 'Tyler Yao'
                 ,number : '74'
+                ,pClass : 'alpha'
             }
-            ,four : {
+            ,{
                 pName : 'Mammoth'
                 ,name : 'Eugene Eng'
                 ,number : '77'
+                ,pClass : 'alpha'
             }
-            ,five : {
+            ,{
                 pName : 'Bounce'
                 ,name : 'Regis Tsai'
                 ,number : '99'
+                ,pClass : 'alpha'
             }
-        },beta : {
-            one : {
+            ,{
                 pName : 'Anakin'
                 ,name : 'George Kurien'
                 ,number : '14'
+                ,pClass : 'beta'
             }
-            ,two : {
+            ,{
                 pName : 'Streakz'
                 ,name : 'Wei Zhu'
                 ,number : '24'
+                ,pClass : 'beta'
             }
-            ,three : {
+            ,{
                 pName : 'Zippo'
                 ,name : 'Stefan Nobbe'
                 ,number : '57'
+                ,pClass : 'beta'
             }
-        },gamma : {
-            one : {
-                pName : ''
-                ,name : ''
-                ,number : ''
-            }
-        },delta : {
-            one : {
+            ,{
                 pName : 'Titan'
                 ,name : 'Jimmy Lin'
                 ,number : '19'
+                ,pClass : 'delta'
             }
-        },epsilon : {
-
-        },zeta : {
-            one : {
+            ,{
                 pName : 'Spawn'
                 ,name : 'Marco Xiang'
                 ,number : '00'
+                ,pClass : 'epsilon'
             }
-            ,two : {
+            ,{
                 pName : 'Lance'
                 ,name : 'Chi Ho Li'
                 ,number : '22'
+                ,pClass : 'zeta'
             }
-        },eta : {
-
-        },theta : {
-
-        },iota : {
-            one : {
-                pName : ''
-                ,name : ''
-                ,number : ''
-            }
-        },kappa : {
-            one : {
+            ,{
                 pName : 'Venom'
                 ,name : 'Sam Van Tran'
                 ,number : '16'
+                ,pClass : 'kappa'
             }
-        },lambda : {
-            one : {
+            ,{
                 pName : 'Onslaught'
                 ,name : 'Raymond Chen'
                 ,number : '23'
                 ,birthday : 'March 23, 1989'
+                ,pClass : 'lambda'
             }
-        },mu : {
-            one : {
+            ,{
                 pName : 'Renegade'
                 ,name : 'James Ha'
                 ,number : '26'
                 ,birthday : 'August 26, 1989'
+                ,pClass : 'mu'
             }
-            ,two : {
+            ,{
                 pName : 'Hades'
                 ,name : 'Danny Lau'
                 ,number : '44'
+                ,pClass : 'mu'
             }
-        },nu : {
-            one : {
-                pName : ''
-                ,name : ''
-                ,number : ''
-            }
-            ,two : {
-                pName : ''
-                ,name : ''
-                ,number : ''
-            }
-        },xi : {
-            one : {
-                pName : ''
-                ,name : ''
-                ,number : ''
-            }
-            ,two : {
-                pName : ''
-                ,name : ''
-                ,number : ''
-            }
-        },omicron : {
-            one : {
+            ,{
                 pName : 'Jalapeno'
                 ,name : 'Robert Lum'
                 ,number : '29'
                 ,birthday : 'December 28, 1990'
+                ,pClass : 'omicron'
             }
-            ,two : {
+            ,{
                 pName : 'Nano'
                 ,name : 'Ricky Cai'
                 ,number : '89'
                 ,birthday : 'May 24, 1989'
+                ,pClass : 'omicron'
             }
-        },pi : {
-            one : {
+            ,{
                 pName : 'Catalyst'
                 ,name : 'Michael Chen'
                 ,number : '92'
                 ,birthday : 'January 4, 1992'
+                ,pClass : 'pi'
             }
-            ,two : {
+            ,{
                 pName : 'Hollow'
                 ,name : 'Chris Quach'
                 ,number : '55'
                 ,birthday : 'April 12, 1992'
+                ,pClass : 'pi'
             }
-            ,three : {
+            ,{
                 pName : 'Glitch'
                 ,name : 'Chuan Chen'
                 ,number : '8'
                 ,birthday : 'August 10, 1991'
+                ,pClass : 'pi'
             }
-        },rho : {
-            one : {
+            ,{
                 pName : 'Spur'
                 ,name : 'Pan Chan'
                 ,number : '97'
                 ,birthday : 'December 25, 1991'
-            }
-        },sigma : {
-
-        },tau : {
-
-        }
-
-      }];
+                ,pClass : 'rho'
+            }];
     return Roster;
 })
 

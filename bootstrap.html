@@ -125,9 +125,14 @@
       <div ng-app="myApp">
         <div ng-controller="RosterCtrl">
           <input type="text" ng-model="search.$">
-            <div ng-repeat="person in roster.list.alpha | filter:search" class="roster-repeat-container">
-              <p>{{person.name}}</p>
-              <p>{{person.pName}}</p>
+            <div ng-repeat="person in roster.list | filter:search" class="roster-repeat-container">
+              <div class="col-sm-3">
+                <img src="{{person.image}}" />
+                <p>{{person.name}}</p>
+                <p>{{person.pName}}</p>
+                <p>{{person.pClass}}</p>
+                <p>{{person.birthday}}</p>
+              </div>
             </div>
         </div>
       </div>

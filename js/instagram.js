@@ -19,12 +19,12 @@ https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDI
 
 			for(i=1;i<links.length;i++) {
 				var lead = links[i]
-					,src = lead.images.thumbnail.url
+					,lowRes = lead.images.low_resolution.url
 					,tag = lead.tags
-					,image = lead.images.standard_resolution.url
+					,standardRes = lead.images.standard_resolution.url
 					,caption = lead.caption.text;
 
-					$("#instagram-feed").append("<div class='instagram-container col-sm-3'><img class='instagram-img' src='" + src + "'/><p>" + caption + "</p></div>");
+					$("#instagram-feed").append("<div class='instagram-container col-sm-3'><img class='instagram-img' src='" + lowRes + "'/><p>" + caption + "</p></div>");
 
 			}
 

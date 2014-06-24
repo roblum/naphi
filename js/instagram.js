@@ -1,6 +1,6 @@
 function pullFeed() {
 	var parms = {
-		count: '10'
+		count: '9'
 		,client_id: 'df70d4f39d3649a9b724876a0f2de343'
 	}
 
@@ -24,7 +24,7 @@ https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDI
 					,image = lead.images.standard_resolution.url
 					,caption = lead.caption.text;
 
-					$("#insta-feed").append("<div class='insta-image-con'><img class='insta-image-img' src='" + src + "'/><p>" + caption + "</p></div>");
+					$("#instagram-feed").append("<div class='instagram-container col-sm-3'><img class='instagram-img' src='" + src + "'/><p>" + caption + "</p></div>");
 
 			}
 

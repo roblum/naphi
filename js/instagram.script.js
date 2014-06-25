@@ -21,7 +21,7 @@ function pullFeed() {
 					,standardRes = lead.images.standard_resolution.url
 					,caption = lead.caption.text;
 
-					$("#instagram-feed").append("<div class='instagram-container col-sm-3'><img class='instagram-img' src='" + lowRes + "'/><p>" + caption + "</p></div>");
+					$("#instagram-feed").append("<div class='instagram-container col-sm-3'><a href='#' class='popBoxLink' id='popBox" + i + "'><img class='instagram-img' src='" + lowRes + "'/><div class='hide-content'><p>" + caption + "</p><span>" + standardRes + "</span></div></a></div>");
 
 			}
 

@@ -1,39 +1,37 @@
+/* FONTS & SIZES */
+/* COLORS */
 /* GENERAL CSS */
-.hide-content{
-	display:none;
+.hide-content {
+  display: none;
 }
-
-.container{
-	text-align:center;
+div.instagram-container.col-sm-3:nth-of-type(5),
+#maps-toggle,
+hr {
+  clear: both;
 }
-div.instagram-container.col-sm-3:nth-of-type(5) {
-	clear: both;
+.container {
+  text-align: center;
 }
+/* INSTAGRAM FEED */
 div.instagram-container img {
-	width: 70%;
-	border: 4px solid white;
-	box-shadow: 1px 1px 6px grey;
-	border-radius: 2px;
+  width: 70%;
+  border: 4px solid #fff;
+  box-shadow: 1px 1px 6px #808080;
+  border-radius: 2px;
 }
 div.instagram-container p {
-	font-size: 0.9em;
-	margin:auto;
-	width:70%;
+  font-size: 0.9em;
+  margin: auto;
+  width: 70%;
 }
-#maps-toggle{
-	clear:both;
+/* GOOGLE MAPS */
+#google-maps {
+  width: 100%;
+  height: 500px;
 }
-#google-maps{
-	width:100%;
-	height:500px;
-}
-hr{
-	clear:both;
-}
-
-/* Light Box CSS */
-#light-box{
-	width:1px;
-	height:1px;
-	padding:20px;
+/* LIGHT BOX */
+#light-box {
+  width: 1px;
+  height: 1px;
+  padding: 20px;
 }

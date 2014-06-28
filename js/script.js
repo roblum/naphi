@@ -42,14 +42,14 @@ jQuery(function($){
 					var next = parseInt(imgNumber) + 1
 						,nextSrc = preloadImagesList[next].src;
 
-					$('#light-box img').attr({'src': nextSrc, 'id': 'large-popBox' + next});
+					$('#light-box img').attr({'src': nextSrc, 'id': 'large-' + next});
 
 				} else if (current === 'prev'){
 					
 					var prev = parseInt(imgNumber) - 1
 						,prevSrc = preloadImagesList[prev].src;
 					
-					$('#light-box img').attr({'src': prevSrc, 'id': 'large-popBox' + prev});
+					$('#light-box img').attr({'src': prevSrc, 'id': 'large-' + prev});
 
 				}
 

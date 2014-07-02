@@ -19,7 +19,7 @@ function pullFeed() {
 				preloadImagesList = [];
 				var imageURLs = [];
 
-			for(i=0;i<links.length;i++) {
+			for(var i=0;i<links.length;i++) {
 				var lead = links[i]
 					,lowRes = lead.images.low_resolution.url
 					,standardRes = lead.images.standard_resolution.url

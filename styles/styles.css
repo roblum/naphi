@@ -4,3 +4,16 @@ html, body, #map-canvas {
      margin: 0;
      padding: 0;
 }
+footer{
+	background: #000;
+	opacity:0.9;
+	color:#fff;
+	height:50px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	font-family: 'Roboto', sans-serif;
+}
+li{
+	display:inline-block;
+}

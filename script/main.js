@@ -12,15 +12,15 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
 
 
 $('body').on('click', '.chapter-navigation li', function(){
-    var current = this.id
+    var current = $(this).data('chapter')
         ,cMarker = new RichMarker({
-            position: geo
+            position: chapterInfo[current].geo
             ,map: map
-            ,content: '<div class="ugc-content" id="' + ugc + '"><img src="' + geoStore[ugc].small_image + '"></div>'
+            ,content: '<div>Testing</div>'
         });
 
         cMarker.setMap(map);
-    map.panTo(coord);
+    map.panTo(cMarker.position);
 });
 
 

@@ -22,23 +22,21 @@ footer{
 div [style*='rgba(88, 88, 88, 0.701961)'] {
 	box-shadow: none !important;
 }
-#epsilon-marker img{
-	-webkit-animation-name: spin;
-    -webkit-animation-duration: 4s;
+#epsilon-marker img.pulse-rotate{
+	-webkit-animation-name: pulse_rotate;
+    -webkit-animation-duration: 5000ms;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 }
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+@-webkit-keyframes pulse_rotate {
+	0% { -webkit-transform: rotate(0deg); }
+	30% { -webkit-transform: scale(0.8); }
+	40% { -webkit-transform: scale(1.25); }
+	50% { -webkit-transform: scale(0.8); }
+	60% { -webkit-transform: rotate(180deg); }
+	70% { -webkit-transform: scale(1.25); }
+	80% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: rotate(360deg); }
 }
 
 /* FOOTER CSS */

@@ -18,6 +18,7 @@ var chapterInfo = {
      epsilon : {
         	icon : 'images/epsilon.png'
         	,geo : new google.maps.LatLng(40.694074, -73.986932)
+          ,content : '<div class="chapter-marker" id="epsilon-marker"><img src="images/nyupoly_circle_1px.png" /></div>'
      },
      zeta : {
           icon : 'images/zeta.png'

@@ -23,7 +23,7 @@ function createRichMarker(chapter){
     var cMarker = new RichMarker({
             position: chapterInfo[chapter].geo
             ,map: map
-            ,content: '<div>Testing</div>'
+            ,content: chapterInfo[chapter].content
         });
 
     cMarker.setMap(map);

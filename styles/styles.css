@@ -14,7 +14,55 @@ footer{
 	bottom:0;
 	font-family: 'Roboto', sans-serif;
 }
-.chapter-navigation li{
+
+/* FOOTER CSS */
+footer li{
 	display:inline-block;
-	cursor:pointer;
+	cursor:pointer;	
+}
+.social-widgets li{
+	list-style-type:none;
+}
+
+
+.social-icon a img {
+	width: 80%;
+	margin-top: 10%;
+}
+.social-icon {
+	width: 35px;
+	height: 35px;
+	border-radius: 20px;
+	text-align: center;
+	float: left;
+	margin-right: 5px;
+	background:#ccc;
+	transition: 1.5s ease-out;
+	-webkit-transition: 1.5s ease-out;
+	-moz-transition: 1.5s ease-out;
+	opacity: 0.5;
+}
+.social-icon:hover{
+	transition: 0.25s ease-in;
+	-webkit-transition: 0.25s ease-in;
+	-moz-transition: 0.25s ease-in;
+	opacity: 1;
+}
+#sw-facebook:hover{
+	background:#3b5998;
+}
+#sw-twitter:hover{
+	background: #1dcaff;
+}
+#sw-instagram:hover{
+	background: #517fa4;
+}
+#sw-tumblr:hover{
+	background: #35465c;
+}
+#sw-blogspot:hover{
+	background: #fe6700;
+}
+#sw-youtube:hover{
+	background: #e52d27;
 }

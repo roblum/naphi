@@ -10,14 +10,26 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
     ,currentZoom = map.getZoom()
     ,imageCacheArray = [];
 
-createRichMarker('epsilon');
+initMarkers();
 
-$('body').on('click', '.chapter-navigation li', function(){
-    var current = $(this).data('chapter');
+//***********************************************
+// EVENT HANDLERS *******************************
     
-    createRichMarker(current);
-    map.panTo(chapterInfo[current].geo);
-});
+
+    $('body').on('click', '.chapter-navigation li', function(){
+        
+        var current = $(this).data('chapter');
+            map.panTo(chapterInfo[current].geo);
+
+    }).on('click', '.chapter-marker img',function(){
+        
+        $('#map-canvas').addClass('blur');
+        $('#contentModal').modal('show');
+
+    });
+
+//***********************************************
+// FUNCTIONS ************************************
 
 function createRichMarker(chapter){
     var cMarker = new RichMarker({
@@ -27,6 +39,12 @@ function createRichMarker(chapter){
         });
 
     cMarker.setMap(map);
+}
+
+function initMarkers(){
+    for (var i in chapterInfo){
+        createRichMarker(i);
+    }
 }
 
     function imageCache(asset){

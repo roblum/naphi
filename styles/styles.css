@@ -4,6 +4,9 @@ html, body, #map-canvas {
      margin: 0;
      padding: 0;
 }
+div{
+	box-shadow:none;
+}
 footer{
 	background: #000;
 	opacity:0.9;
@@ -13,6 +16,29 @@ footer{
 	position:absolute;
 	bottom:0;
 	font-family: 'Roboto', sans-serif;
+}
+
+/* CONTENT CSS */
+div [style*='rgba(88, 88, 88, 0.701961)'] {
+	box-shadow: none !important;
+}
+#epsilon-marker img{
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 /* FOOTER CSS */

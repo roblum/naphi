@@ -17,10 +17,16 @@ footer{
 	bottom:0;
 	font-family: 'Roboto', sans-serif;
 }
+.blur{
+	-webkit-filter:blur(2px);
+}
 
 /* CONTENT CSS */
 div [style*='rgba(88, 88, 88, 0.701961)'] {
 	box-shadow: none !important;
+}
+.chapter-marker{
+	cursor:pointer;
 }
 #epsilon-marker img.pulse-rotate{
 	-webkit-animation-name: pulse_rotate;
@@ -60,7 +66,7 @@ footer li{
 	text-align: center;
 	float: left;
 	margin-right: 5px;
-	background:#ccc;
+	background: #333639;
 	transition: 1.25s ease-out;
 	-webkit-transition: 1.25s ease-out;
 	-moz-transition: 1.25s ease-out;

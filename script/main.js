@@ -14,7 +14,7 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
     var currentZoom = map.getZoom();
 
 initMarkers();
-slickSlider();
+carouselSlider();
 
 //***********************************************
 // EVENT HANDLERS *******************************
@@ -63,13 +63,13 @@ slickSlider();
     });
 
     $(".lazyOwl").one("load", function() {
-        var current = this.src;
-        console.log(current);
-        imageCache(current);
+        var current = this.getAttribute('src');
+        var finishedImage = 'http://epsilon.naphi.com/' + current;
+        imageCache(finishedImage);
     })
 
     $(window).resize(function(){
-        deviceDetection();
+        delay(deviceDetection(), 1000);
     });
 
 
@@ -105,6 +105,14 @@ function initMarkers(){
         imageCacheArray.push(imageCacheObj);
     }
 
+    var delay = (function(){
+        var timer = 0;
+            return function(callback, ms){
+                clearTimeout (timer);
+                timer = setTimeout(callback, ms);
+            };
+    })();
+
     function deviceDetection(){
         var deviceWidth = window.innerWidth
             ,deviceHeight = window.innerHeight;
@@ -122,7 +130,7 @@ function initMarkers(){
         }
     }
 
-    function slickSlider(){
+    function carouselSlider(){
 
         for (var i=0; i<galleryImages.length; i++){
             var markup = '<div class="item"><img class="lazyOwl" data-src="images/gallery_batch/' + 

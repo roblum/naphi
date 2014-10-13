@@ -71,22 +71,31 @@ div#epsilon-marker {
 	color:#fff;
 	padding: 15px;
 }
-.general-content ul {
+.general-content ul.navigation {
 	padding: 0px;
 	margin: 0px;
 	text-align: center;
 	height:10%;
 }
-.general-content ul li{
+.general-content ul.navigation li{
 	list-style-type: none;
 	display: inline-block;
-	border-bottom: 3px solid #ccc;
+	border-bottom: 3px solid #757575;
 	margin: 0px 5px;
 	padding-bottom: 5px;
 	text-transform: uppercase;
-	color: #ccc;
+	color: #757575;
 	cursor: pointer;
 	margin-top:5px;
+}
+.general-content ul.navigation li:hover{
+	color:#fff;
+	border-bottom:3px solid #fff;
+	transition: 0.25s ease-in;
+}
+.general-content ul.navigation li.active{
+	color:#fff;
+	border-bottom:3px solid #fff;
 }
 .overflow{
 	height:85%;
@@ -166,14 +175,31 @@ footer li{
 }
 
 @media(max-width:480px){
+	/* MAP CSS */ 
+	div#epsilon-marker {
+		width: 130px;
+		margin-left: -20px;
+		margin-top: -20px;
+	}
+	#elogo-1{
+		width: 55%;
+	}
+	#elogo-2{
+		width: 25%;
+	}
+	#elogo-3{
+		width: 20%;
+	}
+
+	/* CONTENT CSS */
 	.general-content{
 		width:70%;
-		font-size:1rem;
+		font-size:1.25rem;
 	}
-	.general-content ul {
+	.general-content ul.navigation {
 		height: 16%;
 	}
-	.general-content ul li{
+	.general-content ul.navigation li{
 		font-size:1rem;
 	}
 	.organization-name {

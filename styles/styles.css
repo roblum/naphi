@@ -93,6 +93,7 @@ div#epsilon-marker {
 	color: #757575;
 	cursor: pointer;
 	margin-top:5px;
+	font-size: 1.15rem; /* FOR ADDING IN GALLERY TAB */
 }
 .general-content ul.navigation li:hover{
 	color:#fff;

@@ -11,10 +11,10 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
     ,imageCacheArray = [];
 
     deviceDetection();
-    var currentZoom = map.getZoom();
+    initMarkers();
+    carouselSlider();
 
-initMarkers();
-carouselSlider();
+    var currentZoom = map.getZoom();
 
 //***********************************************
 // EVENT HANDLERS *******************************

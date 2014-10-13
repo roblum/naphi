@@ -15,8 +15,10 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
     console.log(deviceWidth);
     console.log(deviceHeight);
     if (deviceWidth <= 480){
+        $('#chapters li').addClass('mobile-render');
         map.setZoom(13);
     } else if (deviceWidth <= 650 && deviceHeight <= 400){
+        $('#chapters li').addClass('mobile-render');
         map.setZoom(13);
     }
 
@@ -31,8 +33,6 @@ initMarkers();
     $('body').on('click', '.chapter-navigation li', function(){
         
         var current = $(this).data('chapter');
-
-            // map.panTo(chapterInfo[current].selection);
             map.panTo(chapterInfo[current].selection);
 
     }).on('click', '.chapter-marker img',function(){
@@ -62,6 +62,13 @@ initMarkers();
     }).on('click', '#chapters li', function(){
 
         $(mapCanvas).removeClass('blur');
+
+    }).on('click', '.mobile-render', function(){
+        var current = $(this).data('chapter');
+
+        $('.general-content, .fade-bg').slideToggle();
+        $(mapCanvas).removeClass('blur');
+        map.panTo(chapterInfo[current].geo);
 
     });
 

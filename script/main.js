@@ -62,6 +62,12 @@ slickSlider();
 
     });
 
+    $(".lazyOwl").one("load", function() {
+        var current = this.src;
+        console.log(current);
+        imageCache(current);
+    })
+
     $(window).resize(function(){
         deviceDetection();
     });
@@ -117,12 +123,27 @@ function initMarkers(){
     }
 
     function slickSlider(){
-        console.log('ran')
-        $('.autoplay').slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        });
+
+        for (var i=0; i<galleryImages.length; i++){
+            var markup = '<div class="item"><img class="lazyOwl" data-src="images/gallery_batch/' + 
+                        galleryImages[i]
+                        + '" alt="Lazy Owl Image"></div>';
+
+                $(markup).appendTo('#lazy-load');
+
+        }
+
+        $("#lazy-load").owlCarousel({
+            items : 1,
+            itemsDesktop : 1,
+            itemsDesktopSmall : 1,
+            itemsTablet : 1,
+            itemsMobile : 1,
+            lazyLoad : true,
+            navigation : true,
+            autoPlay: 3000
+            ,autoHeight : true
+        }); 
+
     }
 // })();

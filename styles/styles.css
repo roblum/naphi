@@ -62,7 +62,7 @@ div#epsilon-marker {
 	display:none;
 }
 .general-content{
-	width:35%;
+	width:40%;
 	height:70%;
 	position:absolute;
 	top:10%;
@@ -77,15 +77,16 @@ div#epsilon-marker {
 	text-align: center;
 	height:10%;
 }
-.general-content li{
+.general-content ul li{
 	list-style-type: none;
 	display: inline-block;
 	border-bottom: 3px solid #ccc;
-	margin: 0px 10px;
+	margin: 0px 5px;
 	padding-bottom: 5px;
 	text-transform: uppercase;
 	color: #ccc;
 	cursor: pointer;
+	margin-top:5px;
 }
 .overflow{
 	height:85%;
@@ -160,7 +161,28 @@ footer li{
 }
 
 
-/* TESTING */
-.chapter-navigation {
-display: none;
+@media(max-width:1024){
+
+}
+
+@media(max-width:480px){
+	.general-content{
+		width:70%;
+		font-size:1rem;
+	}
+	.general-content ul {
+		height: 16%;
+	}
+	.general-content ul li{
+		font-size:1rem;
+	}
+	.organization-name {
+		width: 50%;
+		font-size: 1rem;
+	}
+	.chapter-name {
+		width: 50%;
+		font-size: 1rem;
+		text-align: right;
+	}
 }

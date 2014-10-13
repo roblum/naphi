@@ -46,8 +46,17 @@ initMarkers();
             $('.general-content #' + current).show();
             $(this).addClass('active');
 
+    }).on('click', '.home', function(){
+
+        map.setZoom(currentZoom);
+        map.panTo(myLatlng);
+
     });
 
+
+google.maps.event.addListener(map, 'center_changed', function() {
+    $('.home').show();    
+});
 
 //***********************************************
 // FUNCTIONS ************************************

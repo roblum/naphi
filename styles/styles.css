@@ -109,6 +109,11 @@ div#epsilon-marker {
 	display:block;
 }
 
+/* CHAPTERS CSS */
+#chapters li{
+	cursor: pointer;
+}
+
 /* FOOTER CSS */
 footer li{
 	display:inline-block;

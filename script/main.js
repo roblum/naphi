@@ -25,6 +25,7 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
     var currentZoom = map.getZoom();
 
 initMarkers();
+slickSlider();
 
 //***********************************************
 // EVENT HANDLERS *******************************
@@ -103,5 +104,15 @@ function initMarkers(){
             imageCacheObj.cache.src = asset;
 
         imageCacheArray.push(imageCacheObj);
+    }
+
+    function slickSlider(){
+        console.log('ran')
+        $('.autoplay').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
     }
 // })();

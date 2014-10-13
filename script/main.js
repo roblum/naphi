@@ -6,7 +6,8 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
         mapTypeControl: false,
         styles: googleMapStyles
     }
-    ,map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
+    ,mapCanvas = document.getElementById('map-canvas')
+    ,map = new google.maps.Map(mapCanvas, mapOptions)
     ,imageCacheArray = []
     ,deviceWidth = window.innerWidth
     ,deviceHeight = window.innerHeight; 
@@ -30,17 +31,19 @@ initMarkers();
     $('body').on('click', '.chapter-navigation li', function(){
         
         var current = $(this).data('chapter');
-            map.panTo(chapterInfo[current].geo);
+
+            // map.panTo(chapterInfo[current].selection);
+            map.panTo(chapterInfo[current].selection);
 
     }).on('click', '.chapter-marker img',function(){
         
-        $('#map-canvas').addClass('blur');
+        $(mapCanvas).addClass('blur');
         $('.general-content, .fade-bg').slideToggle();
 
     }).on('click', '.fade-bg', function(){
 
         $('.general-content, .fade-bg').slideToggle();
-        $('#map-canvas').removeClass('blur');
+        $(mapCanvas).removeClass('blur');
 
     }).on('click', '.general-content ul.navigation li', function(){
 
@@ -55,6 +58,10 @@ initMarkers();
 
         map.setZoom(currentZoom);
         map.panTo(myLatlng);
+
+    }).on('click', '#chapters li', function(){
+
+        $(mapCanvas).removeClass('blur');
 
     });
 

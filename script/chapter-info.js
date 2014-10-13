@@ -18,7 +18,7 @@ var chapterInfo = {
      epsilon : {
         	icon : 'images/epsilon.png'
         	,geo : new google.maps.LatLng(40.694074, -73.986932)
-          ,content : '<div class="chapter-marker" id="epsilon-marker"><img src="images/nyupoly_first.png" /><img class="pulse-rotate" src="images/nyupoly_circle_1px.png" /><img src="images/nyupoly_last.png" /></div>'
+          ,content : '<div class="chapter-marker" id="epsilon-marker"><img id="elogo-1" src="images/nyupoly_first.png" /><img id="elogo-2" class="pulse-rotate" src="images/nyupoly_circle_1px.png" /><img id="elogo-3" src="images/nyupoly_last.png" /></div>'
      },
      zeta : {
           icon : 'images/zeta.png'

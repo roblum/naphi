@@ -28,6 +28,11 @@ initMarkers();
 
     });
 
+    $('#contentModal').on('hidden.bs.modal', function () {
+            $('#map-canvas').removeClass('blur');
+
+    })
+
 //***********************************************
 // FUNCTIONS ************************************
 

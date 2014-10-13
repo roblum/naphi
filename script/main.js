@@ -8,7 +8,13 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
     }
     ,map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
     ,currentZoom = map.getZoom()
-    ,imageCacheArray = [];
+    ,imageCacheArray = []
+    ,deviceSize = window.innerWidth;
+
+    console.log(deviceSize);
+    if (deviceSize <= 480){
+        map.setZoom(13);
+    }
 
 initMarkers();
 
@@ -31,11 +37,14 @@ initMarkers();
         $('.general-content, .fade-bg').slideToggle();
         $('#map-canvas').removeClass('blur');
 
-    }).on('click', '.general-content li', function(){
+    }).on('click', '.general-content ul.navigation li', function(){
 
         var current = $(this).data('nav');
             $('.content-text').hide();
+            $('.general-content ul.navigation li').removeClass('active');
+
             $('.general-content #' + current).show();
+            $(this).addClass('active');
 
     });
 

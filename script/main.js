@@ -24,14 +24,21 @@ initMarkers();
     }).on('click', '.chapter-marker img',function(){
         
         $('#map-canvas').addClass('blur');
-        $('#contentModal').modal('show');
+        $('.general-content, .fade-bg').slideToggle();
+
+    }).on('click', '.fade-bg', function(){
+
+        $('.general-content, .fade-bg').slideToggle();
+        $('#map-canvas').removeClass('blur');
+
+    }).on('click', '.general-content li', function(){
+
+        var current = $(this).data('nav');
+            $('.content-text').hide();
+            $('.general-content #' + current).show();
 
     });
 
-    $('#contentModal').on('hidden.bs.modal', function () {
-            $('#map-canvas').removeClass('blur');
-
-    })
 
 //***********************************************
 // FUNCTIONS ************************************

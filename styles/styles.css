@@ -104,6 +104,9 @@ div#epsilon-marker {
 .content-text{
 	display:none;
 }
+#history{
+	display:block;
+}
 
 /* FOOTER CSS */
 footer li{
@@ -169,6 +172,25 @@ footer li{
 	background: #e52d27;
 }
 
+/* HOME CSS */
+.home{
+	position:fixed;
+	right:0;
+	bottom:10%;
+	padding: 5px;
+	display:none;
+	transition:1s ease-in;
+}
+.home img{
+	width: 35px;
+	opacity: 0.5;
+	cursor: pointer;
+	transition: 1.25s ease-out;
+}
+.home img:hover{
+	opacity: 1;
+	transition: 0.25s ease-in;
+}
 
 @media(max-width:1024){
 

@@ -23,6 +23,8 @@ footer{
 .blur{
 	-webkit-filter:blur(2px);
 	transition: 0.25s ease-in;
+	-webkit-transition: 0.25s ease-in;
+	-moz-transition: 0.25s ease-in;
 }
 
 /* CONTENT CSS */
@@ -99,6 +101,8 @@ div#epsilon-marker {
 	color:#fff;
 	border-bottom:3px solid #fff;
 	transition: 0.25s ease-in;
+	-webkit-transition: 0.25s ease-in;
+	-moz-transition: 0.25s ease-in;
 }
 .general-content ul.navigation li.active{
 	color:#fff;
@@ -201,16 +205,22 @@ footer li{
 	padding: 5px;
 	display:none;
 	transition:1s ease-in;
+	-webkit-transition:1s ease-in;
+	-moz-transition:1s ease-in;
 }
 .home img{
 	width: 35px;
 	opacity: 0.5;
 	cursor: pointer;
 	transition: 1.25s ease-out;
+	-webkit-transition: 1.25s ease-out;
+	-moz-transition: 1.25s ease-out;
 }
 .home img:hover{
 	opacity: 1;
 	transition: 0.25s ease-in;
+	-webkit-transition: 0.25s ease-in;
+	-moz-transition: 0.25s ease-in;
 }
 
 /* GALLERY CSS */

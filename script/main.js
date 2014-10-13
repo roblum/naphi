@@ -8,20 +8,9 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
     }
     ,mapCanvas = document.getElementById('map-canvas')
     ,map = new google.maps.Map(mapCanvas, mapOptions)
-    ,imageCacheArray = []
-    ,deviceWidth = window.innerWidth
-    ,deviceHeight = window.innerHeight; 
+    ,imageCacheArray = [];
 
-    console.log(deviceWidth);
-    console.log(deviceHeight);
-    if (deviceWidth <= 480){
-        $('#chapters li').addClass('mobile-render');
-        map.setZoom(13);
-    } else if (deviceWidth <= 650 && deviceHeight <= 400){
-        $('#chapters li').addClass('mobile-render');
-        map.setZoom(13);
-    }
-
+    deviceDetection();
     var currentZoom = map.getZoom();
 
 initMarkers();
@@ -29,15 +18,15 @@ slickSlider();
 
 //***********************************************
 // EVENT HANDLERS *******************************
-    
+
 
     $('body').on('click', '.chapter-navigation li', function(){
-        
+
         var current = $(this).data('chapter');
             map.panTo(chapterInfo[current].selection);
 
     }).on('click', '.chapter-marker img',function(){
-        
+
         $(mapCanvas).addClass('blur');
         $('.general-content, .fade-bg').slideToggle();
 
@@ -73,9 +62,13 @@ slickSlider();
 
     });
 
+    $(window).resize(function(){
+        deviceDetection();
+    });
+
 
 google.maps.event.addListener(map, 'center_changed', function() {
-    $('.home').show();    
+    $('.home').show();
 });
 
 //***********************************************
@@ -104,6 +97,23 @@ function initMarkers(){
             imageCacheObj.cache.src = asset;
 
         imageCacheArray.push(imageCacheObj);
+    }
+
+    function deviceDetection(){
+        var deviceWidth = window.innerWidth
+            ,deviceHeight = window.innerHeight;
+
+            console.log(deviceWidth);
+            console.log(deviceHeight);
+        if (deviceWidth <= 480){
+            $('#chapters li').addClass('mobile-render');
+            map.setZoom(13);
+        } else if (deviceWidth <= 650 && deviceHeight <= 400){
+            $('#chapters li').addClass('mobile-render');
+            map.setZoom(13);
+        } else if (deviceWidth > 768){
+            $('#chapters li').removeClass('mobile-render');
+        }
     }
 
     function slickSlider(){

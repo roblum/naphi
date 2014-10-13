@@ -7,14 +7,19 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
         styles: googleMapStyles
     }
     ,map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
-    ,currentZoom = map.getZoom()
     ,imageCacheArray = []
-    ,deviceSize = window.innerWidth;
+    ,deviceWidth = window.innerWidth
+    ,deviceHeight = window.innerHeight; 
 
-    console.log(deviceSize);
-    if (deviceSize <= 480){
+    console.log(deviceWidth);
+    console.log(deviceHeight);
+    if (deviceWidth <= 480){
+        map.setZoom(13);
+    } else if (deviceWidth <= 650 && deviceHeight <= 400){
         map.setZoom(13);
     }
+
+    var currentZoom = map.getZoom();
 
 initMarkers();
 

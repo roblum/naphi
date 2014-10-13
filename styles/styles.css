@@ -32,6 +32,11 @@ div [style*='rgba(88, 88, 88, 0.701961)'] {
 }
 .chapter-marker{
 	cursor:pointer;
+	text-align: center;
+}
+.chapter-marker p{
+	color: white;
+	text-shadow: 2px 2px 2px #000;
 }
 div#epsilon-marker {
 	width: 200px;
@@ -107,6 +112,9 @@ div#epsilon-marker {
 }
 #history{
 	display:block;
+}
+#rush a{
+	color:#fff;
 }
 
 /* CHAPTERS CSS */

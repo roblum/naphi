@@ -121,18 +121,21 @@ function initMarkers(){
     })();
 
     function deviceDetection(){
-        var deviceWidth = window.innerWidth
-            ,deviceHeight = window.innerHeight;
+        var deviceWidth = window.innerWidth;
+            // ,deviceHeight = window.innerHeight;
 
             console.log(deviceWidth);
             console.log(deviceHeight);
-        if (deviceWidth <= 480){
+        if (deviceWidth <= 768){
             $('#chapters li').addClass('mobile-render');
             map.setZoom(13);
-        } else if (deviceWidth <= 650 && deviceHeight <= 400){
-            $('#chapters li').addClass('mobile-render');
-            map.setZoom(13);
-        } else if (deviceWidth > 768){
+        } 
+        // else if (deviceWidth <= 650 && deviceHeight <= 400){
+        //     $('#chapters li').addClass('mobile-render');
+        //     map.setZoom(13);
+        // } 
+        // else if (deviceWidth > 768){
+        else {
             $('#chapters li').removeClass('mobile-render');
         }
     }

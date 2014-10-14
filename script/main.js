@@ -125,7 +125,7 @@ function initMarkers(){
             // ,deviceHeight = window.innerHeight;
 
             console.log(deviceWidth);
-            console.log(deviceHeight);
+            // console.log(deviceHeight);
         if (deviceWidth <= 768){
             $('#chapters li').addClass('mobile-render');
             map.setZoom(13);

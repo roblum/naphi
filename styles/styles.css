@@ -84,6 +84,10 @@ div#epsilon-marker {
 	margin: 0px;
 	text-align: center;
 	height:15%;
+
+	/* ADDED */
+	float: left;
+	width: 100%;
 }
 .general-content ul.navigation li{
 	list-style-type: none;
@@ -111,6 +115,10 @@ div#epsilon-marker {
 .overflow{
 	height:85%;
 	overflow-y:auto;
+
+	/* ADDED */
+	float: left;
+	width: 100%;
 }
 .content-text{
 	display:none;
@@ -127,6 +135,11 @@ div#epsilon-marker {
 	background: #ccc;
 	color: #000;
 	padding: 1px 10px 0px 10px;
+
+	/* ADDED */
+	height: 100%;
+	float: left;
+	overflow: auto;
 }
 
 /* CHAPTERS CSS */
@@ -147,6 +160,9 @@ div#epsilon-marker {
 div#gallery {
 	height: 100%;
 	overflow-y: hidden;
+
+	/* ADDED */
+	width: 100%;
 }
 .lazyOwl{
 	width:100%;

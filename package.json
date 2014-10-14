@@ -1,25 +1,27 @@
 {
-	"name": "Naphi-Epsilon-Chapter-Website"
-	,"version": "0.1.0"
-	,"author": {
-		"name": "Rob Lum"
-		,"email": "lum.robert@gmail.com"
-		,"url": "https://github.com/roblum"
-	}
-	,"description": "Grunt/Stylus"
-	,"repository": {
-		"type": "git"
-		,"url": "https://epsilon.naphi.com"
-	}
-	,"dependencies": {
-		"grunt": "~0.4.0"
-		,"grunt-contrib-stylus": "0.8.x"
-		,"grunt-contrib-uglify": "~0.1.2"
-		,"grunt-contrib-watch": "~0.3.1"
-		,"stylus": "*"
-
-	}
-	,"engines": {
-		"node": "0.8.x"
-	}
+  "name": "Naphi-Epsilon-Chapter-Website",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rob Lum",
+    "email": "lum.robert@gmail.com",
+    "url": "https://github.com/roblum"
+  },
+  "description": "Grunt/Stylus",
+  "repository": {
+    "type": "git",
+    "url": "https://epsilon.naphi.com"
+  },
+  "dependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-stylus": "0.8.x",
+    "grunt-contrib-uglify": "~0.1.2",
+    "grunt-contrib-watch": "~0.3.1",
+    "stylus": "*"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "devDependencies": {
+    "grunt-ftp-deploy": "^0.1.8"
+  }
 }

@@ -1,33 +1,33 @@
 module.exports = function (grunt) {
     grunt.initConfig({
-        // uglify: {
-        //     dist: {
-        //         files: {
-        //             'script.min.js': ['chapter-info.js', 'gallery-images.js', 'gmaps-styles.js', 'contact.js', 'main.js']
-        //         }
-        //         ,options: {
-        //             banner: '/* Epsilon Naphi - <%= grunt.template.today() %> */'
-        //         }
-        //     },
-        // },
+        uglify: {
+            dist: {
+                files: {
+                    'script/script.min.js': ['script/chapter-info.js', 'script/gallery-images.js', 'script/gmaps-styles.js', 'script/contact.js', 'script/main.js']
+                }
+                ,options: {
+                    banner: '/* Epsilon Naphi - <%= grunt.template.today() %> */'
+                }
+            },
+        },
         watch: {
             js : {
-              files: ['script/*.js']
-              ,tasks: ['ftp-deploy']
+                files: ['script/*.js']
+                ,tasks: ['uglify', 'ftp-deploy']
             }
         }
         ,ftp: grunt.file.readJSON('ftp.json')
         ,'ftp-deploy': {
-                 build: {
-                   auth: {
-                     host: '<%= ftp.host %>',
-                     port: 21,
-                     authPath : 'ftp.ftppass',
-                     authKey: 'key'
-                   },
-                   src: 'script/',
-                   dest: '/staging/script/',
-                   exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'path/to/dist/tmp']
+               build: {
+                    auth: {
+                    host: '<%= ftp.host %>',
+                    port: 21,
+                    authPath : 'ftp.ftppass',
+                    authKey: 'key'
+               },
+                    src: 'script/',
+                    dest: '/staging/script/',
+                    exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'path/to/dist/tmp']
                  }
           }
      // ,jshint: {
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
 
     });
 
-    // grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-ftp-deploy');
     // grunt.loadNpmTasks('grunt-contrib-cssmin');

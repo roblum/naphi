@@ -128,8 +128,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization"></script>
-    <script type="text/javascript" src="script/owl.carousel.min.js"></script>
-    <script src="script/rich-marker.js"></script>
+    <script src="lib/owl.carousel.min.js"></script>
+    <script src="lib/rich-marker.js"></script>
     <script src="script/gmaps-styles.js"></script>
     <script src="script/chapter-info.js"></script>
     <script src="script/gallery-images.js"></script>

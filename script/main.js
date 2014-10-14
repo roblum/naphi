@@ -95,6 +95,17 @@ function createRichMarker(chapter){
         });
 
     cMarker.setMap(map);
+    removeShadow();
+}
+
+function removeShadow(){
+    $('body').on('DOMNodeInserted', function(e){
+        if (e.target.attributes[0]){
+            if (e.target.attributes[0].value.indexOf('box-shadow') != -1){
+                $(e.target).addClass('removeShadow');
+            }
+        }
+    });
 }
 
 function initMarkers(){
@@ -129,11 +140,11 @@ function initMarkers(){
         if (deviceWidth <= 768){
             $('#chapters li').addClass('mobile-render');
             map.setZoom(13);
-        } 
+        }
         // else if (deviceWidth <= 650 && deviceHeight <= 400){
         //     $('#chapters li').addClass('mobile-render');
         //     map.setZoom(13);
-        // } 
+        // }
         // else if (deviceWidth > 768){
         else {
             $('#chapters li').removeClass('mobile-render');
@@ -151,7 +162,7 @@ function initMarkers(){
         var shuffledImages = shuffle(galleryImages);
 
         for (var i=0; i<shuffledImages.length; i++){
-            var markup = '<div class="item"><img class="lazyOwl" data-src="images/gallery_batch/' + 
+            var markup = '<div class="item"><img class="lazyOwl" data-src="images/gallery_batch/' +
                         shuffledImages[i]
                         + '" alt="Lazy Owl Image"></div>';
 
@@ -169,7 +180,7 @@ function initMarkers(){
             navigation : true,
             autoPlay: 3000
             ,autoHeight : true
-        }); 
+        });
 
     }
 })();

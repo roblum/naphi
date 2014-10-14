@@ -122,6 +122,13 @@ div#epsilon-marker {
 	color:#fff;
 }
 
+/* CONTENT CSS */
+.overflow #history, .overflow #rush, .overflow #mission {
+	background: #ccc;
+	color: #000;
+	padding: 1px 10px 0px 10px;
+}
+
 /* CHAPTERS CSS */
 #chapters{
 	margin-top:1em;
@@ -133,16 +140,60 @@ div#epsilon-marker {
 	margin: 3% 0px;
 }
 
-/* FOOTER CSS */
-footer li{
-	display:inline-block;
-	cursor:pointer;	
+/* GALLERY CSS */
+.owl-pagination, .owl-buttons{
+	display:none;
 }
-.organization-name{
+div#gallery {
+	height: 100%;
+	overflow-y: hidden;
+}
+.lazyOwl{
+	width:100%;
+}
+
+/* CONTACT CSS */
+#contact-form h5 {
+	margin: 5px 0px;
+	padding-left: 10px;
+}
+div#contact-form {
+	width: 100%;
+}
+div#contact-form input, div#contact-form textarea {
+	/*color: #60140f;*/
+	border: 2px solid #60140f;
+	background: #000;
+	padding: 5px 10px;
+	outline:none;
+	color: #ccc;
+}
+#contact-form input {
+	width: 50%;
+}
+#contact-form textarea {
+	width: 100%;
+}
+#contact-form button {
+	/*color: #60140f;*/
+	border: 2px solid #60140f;
+	background: black;
+	padding: 5px 10px;
+	outline:none;
+	margin-top: 5px;
 	float:left;
+	color: #ccc;
 }
-.chapter-name{
-	float:right;
+#contact-form button:hover {
+	background: #60140f;
+	transition: 0.25s ease-in;
+	-webkit-transition: 0.25s ease-in;
+	-moz-transition: 0.25s ease-in;
+}
+div#contact-results {
+	float: left;
+	margin-top: 5px;
+	padding: 5px 0px 0px 10px;
 }
 
 /* SOCIAL CSS */
@@ -223,52 +274,18 @@ footer li{
 	-moz-transition: 0.25s ease-in;
 }
 
-/* GALLERY CSS */
-.owl-pagination, .owl-buttons{
-	display:none;
+/* FOOTER CSS */
+footer li{
+	display:inline-block;
+	cursor:pointer;	
 }
-div#gallery {
-	height: 100%;
-	overflow-y: hidden;
-}
-.lazyOwl{
-	width:100%;
-}
-
-/* CONTACT CSS */
-#contact-form h5 {
-	margin: 5px 0px;
-}
-div#contact-form {
-	width: 100%;
-}
-div#contact-form input, div#contact-form textarea {
-	color: #60140f;
-	border: 2px solid #60140f;
-	background: #000;
-	padding: 5px 10px;
-	outline:none;
-}
-#contact-form input {
-	width: 50%;
-}
-#contact-form textarea {
-	width: 100%;
-}
-#contact-form button {
-	color: #60140f;
-	border: 2px solid #60140f;
-	background: black;
-	padding: 5px 30px;
-	outline:none;
-	margin-top: 5px;
+.organization-name{
 	float:left;
 }
-div#contact-results {
-	float: left;
-	margin-top: 5px;
-	padding: 5px 0px 0px 10px;
+.chapter-name{
+	float:right;
 }
+
 
 @media(max-width:1024){
 

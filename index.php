@@ -62,7 +62,7 @@
 
               <p>The brothers of Nu Alpha Phi welcomes you to attend. What are you waiting for? You want to waste four years of college?</p>
 
-              <p>For more information, contact <a href="mailto:rush.naphi@gmail.com">rush.naphi@gmail.com</a></p>
+              <p>For more information, contact <a href="mailto:nyu.naphi@gmail.com">nyu.naphi@gmail.com</a></p>
             </div>
 
             <div id="chapters" class="chapter-navigation content-text">
@@ -90,7 +90,7 @@
                   <input type="text" name="email" value="" maxlength="50" required="true" />
                 <h5>Message:</h5>
                   <textarea rows="7" cols="50" name="message" required="true"></textarea>
-                  
+
                   <button id="contact-submit">SUBMIT</button>
                   <div id="contact-results"></div>
               </div>
@@ -130,11 +130,13 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization"></script>
     <script src="lib/owl.carousel.min.js"></script>
     <script src="lib/rich-marker.js"></script>
-    <script src="script/gmaps-styles.js"></script>
+
+    <!-- <script src="script/gmaps-styles.js"></script>
     <script src="script/chapter-info.js"></script>
     <script src="script/gallery-images.js"></script>
     <script src="script/main.js"></script>
-    <script src="script/contact.js"></script>
+    <script src="script/contact.js"></script> -->
+    <script src="script/script.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

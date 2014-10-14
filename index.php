@@ -67,9 +67,9 @@
 
             <div id="chapters" class="chapter-navigation content-text">
                 <li id="cn-alpha" data-chapter="alpha">A - Albany SUNY</li>
-                <li id="cn-beta" data-chapter="beta">B - CUNY</li>
+                <li id="cn-beta" data-chapter="beta">B - City University of New York</li>
                 <li id="cn-gamme" data-chapter="gamma">&#915; - Stonybrook University</li>
-                <li id="cn-delta" data-chapter="delta">&#916; - Buffalo SUNY</li>
+                <li id="cn-delta" data-chapter="delta">&#916; - University at Buffalo</li>
                 <li id="cn-epsilon" data-chapter="epsilon">E - NYU Poly</li>
                 <li id="cn-zeta" data-chapter="zeta">Z - Binghamton University</li>
                 <li id="cn-eta" data-chapter="eta">H - Syracuse University</li>
@@ -108,9 +108,6 @@
         </li>
         <li id="sw-instagram" class="social-icon">
             <a href="http://instagram.com/nualphaphi" target="_blank"><img src="images/instagram.png" target="_blank"></a>
-        </li>
-        <li id="sw-tumblr" class="social-icon">
-            <a href="" target="_blank"><img src="images/tumblr.png" target="_blank"></a>
         </li>
         <li id="sw-blogspot" class="social-icon">
             <a href="http://nualphaphi.blogspot.com/" target="_blank"><img src="images/blogspot.png" target="_blank"></a>

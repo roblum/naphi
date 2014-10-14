@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/owl.carousel.css" />
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
     <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,greek,greek-ext' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="crest.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 

@@ -1,4 +1,4 @@
-//(function(){
+(function(){
 var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
     ,mapOptions = {
         zoom: 14,
@@ -20,23 +20,18 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
 // EVENT HANDLERS *******************************
 
 
-    $('body').on('click', '.chapter-navigation li', function(){
-
-        var current = $(this).data('chapter');
-            map.panTo(chapterInfo[current].selection);
-
-    }).on('click', '.chapter-marker img',function(){
-
+    $('body').on('click', '.chapter-marker img',function(){
+        // Slidetoggle modal box when google maps marker is clicked
         $(mapCanvas).addClass('blur');
         $('.general-content, .fade-bg').slideToggle();
 
     }).on('click', '.fade-bg', function(){
-
+        // Close modal box when fade-bg is clicked
         $('.general-content, .fade-bg').slideToggle();
         $(mapCanvas).removeClass('blur');
 
     }).on('click', '.general-content ul.navigation li', function(){
-
+        // Active state and content handler for modal box
         var current = $(this).data('nav');
             $('.content-text').hide();
             $('.general-content ul.navigation li').removeClass('active');
@@ -44,37 +39,49 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
             $('.general-content #' + current).show();
             $(this).addClass('active');
 
-    }).on('click', '.home', function(){
-
-        map.setZoom(currentZoom);
-        map.panTo(myLatlng);
+    }).on('click', '.chapter-navigation li', function(){
+        // Changes map view to chapter selected
+        var current = $(this).data('chapter');
+            map.panTo(chapterInfo[current].selection);
 
     }).on('click', '#chapters li', function(){
-
+        // Remove blur from map when a chapter is selected
         $(mapCanvas).removeClass('blur');
 
     }).on('click', '.mobile-render', function(){
+        // Hide modal to show chapter when on mobile device
         var current = $(this).data('chapter');
 
         $('.general-content, .fade-bg').slideToggle();
         $(mapCanvas).removeClass('blur');
         map.panTo(chapterInfo[current].geo);
 
+    }).on('click', '.home', function(){
+        // Reset map to initial state
+        map.setZoom(currentZoom);
+        map.panTo(myLatlng);
+
     });
 
     $(".lazyOwl").one("load", function() {
+        // Cache image after image has loaded in through lazy-load
         var current = this.getAttribute('src');
         var finishedImage = 'http://epsilon.naphi.com/' + current;
         imageCache(finishedImage);
+
     })
 
     $(window).resize(function(){
+        // When window is resize, detect device size
         delay(deviceDetection(), 1000);
+
     });
 
 
 google.maps.event.addListener(map, 'center_changed', function() {
+    // When map has changed its view, show the Home button
     $('.home').show();
+
 });
 
 //***********************************************
@@ -162,4 +169,4 @@ function initMarkers(){
         }); 
 
     }
-// })();
+})();

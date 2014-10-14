@@ -9,7 +9,7 @@ var chapterInfo = {
           icon : 'images/beta.png'
           ,geo : new google.maps.LatLng(40.739995,-73.983642)
           ,selection : new google.maps.LatLng(40.739995, -74.01007785205084)
-          ,content : '<div class="chapter-marker"><img src="images/naphi_letters.png" /><p>B - CUNY</p></div>'
+          ,content : '<div class="chapter-marker"><img src="images/naphi_letters.png" /><p>B - CITY UNIVERSITY OF NEW YORK</p></div>'
      },
      gamma : {
           icon : 'images/gamma.png'
@@ -21,7 +21,7 @@ var chapterInfo = {
           icon : 'images/delta.png'
           ,geo : new google.maps.LatLng(43.000809,-78.78897)
           ,selection : new google.maps.LatLng(43.000809, -78.81343174621583)
-          ,content : '<div class="chapter-marker"><img src="images/naphi_letters.png" /><p>&#916; - BUFFAO SUNY</p></div>'
+          ,content : '<div class="chapter-marker"><img src="images/naphi_letters.png" /><p>&#916; - UNIVERSITY AT BUFFAO</p></div>'
      },
      epsilon : {
         	icon : 'images/epsilon.png'

@@ -235,6 +235,41 @@ div#gallery {
 	width:100%;
 }
 
+/* CONTACT CSS */
+#contact-form h5 {
+	margin: 5px 0px;
+}
+div#contact-form {
+	width: 100%;
+}
+div#contact-form input, div#contact-form textarea {
+	color: #60140f;
+	border: 2px solid #60140f;
+	background: #000;
+	padding: 5px 10px;
+	outline:none;
+}
+#contact-form input {
+	width: 50%;
+}
+#contact-form textarea {
+	width: 100%;
+}
+#contact-form button {
+	color: #60140f;
+	border: 2px solid #60140f;
+	background: black;
+	padding: 5px 30px;
+	outline:none;
+	margin-top: 5px;
+	float:left;
+}
+div#contact-results {
+	float: left;
+	margin-top: 5px;
+	padding: 5px 0px 0px 10px;
+}
+
 @media(max-width:1024){
 
 }

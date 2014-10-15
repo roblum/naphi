@@ -448,3 +448,16 @@ footer li{
 		text-align: right;
 	}
 }
+
+@media(max-width:320px){
+	.general-content ul.navigation {
+		height: 20%;
+	}
+	.overflow{
+		height:80%;
+	}
+	#contact-form textarea {
+		width: 100%;
+		height: 60px;
+	}
+}

@@ -90,7 +90,7 @@
                 <h5>Email Address:</h5>
                   <input type="text" name="email" value="" maxlength="50" required="true" />
                 <h5>Message:</h5>
-                  <textarea rows="7" cols="50" name="message" required="true"></textarea>
+                  <textarea rows="5" cols="50" name="message" required="true"></textarea>
 
                   <button id="contact-submit">SUBMIT</button>
                   <div id="contact-results"></div>

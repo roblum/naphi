@@ -139,7 +139,7 @@ function initMarkers(){
         var deviceWidth = window.innerWidth;
             // ,deviceHeight = window.innerHeight;
 
-            console.log(deviceWidth);
+            // console.log(deviceWidth);
             // console.log(deviceHeight);
         if (deviceWidth <= 768){
             $('#chapters li').addClass('mobile-render');

@@ -26,7 +26,7 @@ module.exports = function (grunt) {
                     authKey: 'key'
                },
                     src: 'script/',
-                    dest: '/staging/script/',
+                    dest: '/script/',
                     exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'path/to/dist/tmp']
                  }
           }

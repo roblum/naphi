@@ -19,11 +19,15 @@ var myLatlng = new google.maps.LatLng(40.71043855741909, -74.00503814701665)
 //***********************************************
 // EVENT HANDLERS *******************************
 
-
-    $('body').on('click', '.chapter-marker img',function(){
-        // Slidetoggle modal box when google maps marker is clicked
-        $(mapCanvas).addClass('blur');
-        $('.general-content, .fade-bg').slideToggle();
+var duplicateEvent = false;
+    $('body').on('click touchstart', '.chapter-marker img',function(){
+        if (!duplicateEvent){
+            duplicateEvent = true;
+            setTimeout(function(){duplicateEvent = false;},500);
+            // Slidetoggle modal box when google maps marker is clicked
+            $(mapCanvas).addClass('blur');
+            $('.general-content, .fade-bg').slideToggle();
+        }
 
     }).on('click', '.fade-bg', function(){
         // Close modal box when fade-bg is clicked

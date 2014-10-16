@@ -47,5 +47,9 @@ var chapterInfo = {
      webmaster : {
           geo : new google.maps.LatLng(-83.50030489914762, -272.04076946262956)
           ,content : '<div id="webmaster">Webmaster Jalape&#241;o #29</div>'
+     },
+     nyu:{
+          geo : new google.maps.LatLng(40.729513,-73.996461)
+          ,content : '<div class="chapter-marker"><img src="images/nyu.png" /></div>'
      }
 }

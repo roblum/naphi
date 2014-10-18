@@ -17,7 +17,7 @@ var chapterInfo = {
      delta : {
           geo : new google.maps.LatLng(43.000809,-78.78897)
           ,selection : new google.maps.LatLng(43.000809, -78.81343174621583)
-          ,content : '<div class="chapter-marker"><img src="images/naphi_letters.png" /><p>&#916; - UNIVERSITY AT BUFFAO</p></div>'
+          ,content : '<div class="chapter-marker"><img src="images/naphi_letters.png" /><p>&#916; - UNIVERSITY AT BUFFALO</p></div>'
      },
      epsilon : {
         	geo : new google.maps.LatLng(40.694074, -73.986932)
